@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+  <title>Home - Slumbermore</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/slumbermoretest.css">
+    
+    <!--[if ltIE9]>
+       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+<script>
+
+$(document).ready(function(){
+$("#mobmenbtn").click(function() { // when toggle is clicked...
+ $("#mobiletrigger").toggle(); // ... open or close the navigation
+
+   });
+  //to make #mobilenav toggle responsive to resizing
+  $(window).resize(function(){	
+	if ($("#search2").css("display") == "block"){
+		$("#mobiletrigger").hide();
+	}else{
+		$("#mobiletrigger").show();	
+	}
+ });
+});
+
+</script>
+
+</head>
+
+<body>
+  <header>
+        
+        <a href="slumbermore_templt-test.html"><img id="logo" src="images/logo.png" /></a>
+      	 <img id="mobmenbtn" src="images/img-toggle.png" alt="Mobile Menu Button">
+        
+		<div id="unav">
+        <a href="">LOG-IN</a>
+        <a href="" class="marleft">CART</a>
+     </div>
+     
+        
+        <nav id="mobiletrigger">
+        <a href="store_templt-test.html">STORE</a>
+        <a href="help_templt-test.html">HELP</a>
+        <a href="">CONTACT</a>
+        <a href="">ABOUT US</a>
+        <div id="mobileadd">
+        <a href="">LOG-IN</a>
+        <a href="" class="marleft">CART</a>
+        </div>
+        
+        
+        </div>
+        <div id="search">
+        <input type="text" placeholder="Search here..." />&nbsp;<button type="submit" value="Search">SEARCH</button>
+        </div>
+        </nav> 
+        
+        <div id="search2">
+        <input type="text" placeholder="Search here..." />&nbsp;<button type="submit" value="Search">SEARCH</button>
+        </div>
+        
+  </header>
+  
+  <article>
+  <section class="col1">
+   		<h1>Shop by Product Type:</h1>
+        <ul>
+        	<li><a href="#">Light Therapy</a></li>
+           <li><a href="#">Blue Blocking</a></li>
+           <li><a href="#">White Noise</a></li>
+           <li><a href="#">Ear Plugs</a></li>
+           <li><a href="#">Weekly Deals</a></li>
+        </ul>
+         
+    </section>
+    
+    <section class="col2">
+    	<img src="images/promo1.png"  alt="promo"/>
+    </section>
+  </article>
+  
+  <footer>
+  	  <a href="store_templt-test.html">STORE</a>
+	  <a href="help_templt-test.html">HELP</a>
+  	  <a href="">CONTACT</a>
+  	  <a href="">ABOUT US</a>
+      <small>
+      <p>&copy; 2014, All Rights Reserved ~ Site Design by Patrick Dodd</p>
+      </small>
+  </footer>
+</body>
+</html>
